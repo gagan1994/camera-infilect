@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/cameraFragment"
+        android:name="com.infilect.taskcamera.ui.fragments.CameraFragment"
+        android:label="CameraFragment">
+        <action
+            app:popUpTo="@+id/mainFragment"
+            android:id="@+id/action_cameraFragment_to_previewFragment"
+            app:destination="@id/previewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.infilect.taskcamera.ui.fragments.MainFragment"
+        android:label="MainFragment">
+        <action
+            android:id="@+id/action_mainFragment_to_cameraFragment"
+            app:destination="@id/cameraFragment"
+            app:popUpTo="@+id/mainFragment"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/previewFragment"
+        android:name="com.infilect.taskcamera.ui.fragments.PreviewFragment"
+        android:label="PreviewFragment">
+        <argument
+            android:name="imageUrl"
+            android:defaultValue=""
+            app:argType="string" />
+    </fragment>
+</navigation>

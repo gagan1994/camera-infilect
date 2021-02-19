@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Camera</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="permission_need">Camera and location permision needed</string>
+    <string name="settings_btn_text">SETTINGS</string>
+    <string name="firebase_folder_path">gs://library-projects-47aeb.appspot.com</string>
+    <string name="on_board_heading">Open Camera</string>
+    <string name="on_board_contents">Click captue and upload.</string>
+
+</resources>
